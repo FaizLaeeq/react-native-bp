@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "vevent.app"
-               BlueprintName = "vevent"
-               ReferencedContainer = "container:vevent.xcodeproj">
+               BuildableName = "reactnativebp.app"
+               BlueprintName = "reactnativebp"
+               ReferencedContainer = "container:reactnativebp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "veventTests.xctest"
-               BlueprintName = "veventTests"
-               ReferencedContainer = "container:vevent.xcodeproj">
+               BuildableName = "reactnativebpTests.xctest"
+               BlueprintName = "reactnativebpTests"
+               ReferencedContainer = "container:reactnativebp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "vevent.app"
-            BlueprintName = "vevent"
-            ReferencedContainer = "container:vevent.xcodeproj">
+            BuildableName = "reactnativebp.app"
+            BlueprintName = "reactnativebp"
+            ReferencedContainer = "container:reactnativebp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "vevent.app"
-            BlueprintName = "vevent"
-            ReferencedContainer = "container:vevent.xcodeproj">
+            BuildableName = "reactnativebp.app"
+            BlueprintName = "reactnativebp"
+            ReferencedContainer = "container:reactnativebp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
