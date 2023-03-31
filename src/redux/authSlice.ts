@@ -1,14 +1,14 @@
-import {createSlice} from '@reduxjs/toolkit';
-import {User} from '../types';
+import { createSlice } from '@reduxjs/toolkit';
+import { UserInfo } from 'react-native-auth0';
 
 interface AuthSlice {
   token: string;
-  user: User;
+  user: UserInfo | null;
   error: string;
 }
 const initialState: AuthSlice = {
   token: '',
-  user: {name: '', email: ''},
+  user: null,
   error: '',
 };
 
@@ -25,6 +25,6 @@ export const authSlice = createSlice({
   },
 });
 
-export const {setToken, setAuthUser} = authSlice.actions;
+export const { setToken, setAuthUser } = authSlice.actions;
 
 export default authSlice.reducer;
