@@ -3,9 +3,17 @@ import { setAuthUser, setIsLoading, setToken } from '../../redux/authSlice';
 import { useAppDispatch } from '../../redux/store';
 
 export const useAuthentication = () => {
-  const { authorize, user, getCredentials, clearSession, isLoading } =
-    useAuth0();
+  const { authorize, user, getCredentials, clearSession } = useAuth0();
   const dispatch = useAppDispatch();
+
+  const checkIfLoggedIn = async () => {
+    try {
+      const credentials = await getCredentials();
+      dispatch(setToken(credentials.accessToken));
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
   const login = async () => {
     try {
@@ -28,5 +36,5 @@ export const useAuthentication = () => {
       console.log('Log out cancelled');
     }
   };
-  return { login, logout };
+  return { login, logout, checkIfLoggedIn };
 };
